@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPT+</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+
+        body {
+            background-color: #2f2b41;
+            display: grid;
+        }
+
+        .header {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+        }
+
+        #carousel-exemplo,
+        .col-4 {
+            margin-bottom: 100px;
+        }
+
+        .card {
+            margin: 10px;
+            background-color: #2f2b41;
+            border: none;
+        }
+
+        .card img {
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SPT+</h1>
+        <form>
+            <input type="search" id="search" placeholder="Nome do filme...">
+            <button type="submit">Buscar!</button>
+        </form>
+    </div>
+    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="5000" class="carousel-item active">
+                <img class="d-block w-100" src="https://www.indiewire.com/wp-content/uploads/2022/10/Scott_Pilgrim_vs_the_World-148644740-large.webp" />
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+                <img class="d-block w-100" src="https://static0.srcdn.com/wordpress/wp-content/uploads/2023/11/greatest-movies-of-all-time.jpg" />
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+                <img class="d-block w-100" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/05/l-intro-1601561572-Cropped.jpg" />
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>Filmes</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/21-being-john-malkovich-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/22-inception-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/24-silence-of-the-lambs-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/25-sin-city-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/17-the-dark-knight-rises-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="https://webneel.com/daily/sites/default/files/images/daily/02-2013/13-humboldt-county-creative-movie-poster-design.jpg">
+                    <button class="btn btn-primary">Saiba mais</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
